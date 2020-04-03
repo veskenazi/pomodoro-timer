@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d75f9693f.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Pomodoro Clock</title>
+    <link rel="shortcut icon" type="image/ico" href="img/stopwatch-solid.svg" />
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro clock</h1>
+        <div id="setTimes">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Session</h3>
+                </div>
+                <div class="col-6">
+                    <h3>Break</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="minusSessionBtn" class="col-2 btn"><i class="fas fa-angle-down"></i></div>
+                <div id="sessionDisplay" class="col-2">25</div>
+                <div id="plusSessionBtn" class="col-2 btn"><i class="fas fa-angle-up"></i></div>
+                <div id="minusBreakBtn" class="col-2 btn"><i class="fas fa-angle-down"></i></div>
+                <div id="breakDisplay" class="col-2">5</div>
+                <div id="plusBreakBtn" class="col-2 btn"><i class="fas fa-angle-up"></i></div>
+            </div>
+        </div>
+        <div id="playPomodoro">
+            <div class="row">
+                <div id="startBtn" class="col-6 btn"><i class="fas fa-play"></i></div>
+                <div id="refreshBtn" class="col-6 btn"><i class="fas fa-sync"></i></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="currentStatusDisplay">Session</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div id="timerDisplay" class="col-12">25:00</div>
+                <audio id="timeOutSound" src="snd/timeout.mp3"></audio>
+            </div>
+            <div class="row">
+                <div id="pauseBtn" class="col-6 btn"><i class="fas fa-pause"></i></div>
+                <div id="stopBtn" class="col-6 btn"><i class="fas fa-stop"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
